@@ -1,6 +1,6 @@
 import Home from "../sections/Home.section";
-import LetterSection from "../sections/Letter/Letter.section";
-import Flashcards from "../sections/Flashcards/Flashcards.section";
+import LetterSection from "../sections/Letter.section";
+import Flashcards from "../sections/Flashcards.section";
 import VideoCard from "../sections/Video.section";
 import Goodbye from "../sections/Goodbye.section";
 
@@ -17,45 +17,16 @@ import { TypingText } from "../components/CustomTexts";
 export default function Page() {
   return (
     <div className="h-[100vh] relative bg-[#f9f6ed] overflow-x-hidden">
-      <div className="h-full w-full">
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.25 }}
-          className="w-full  flex flex-col items-center justify-center h-full"
-        >
-          <img src="/home_bg.jpg" className="absolute" />
-          <div className=" flex absolute flex-col items-center top-[25%]">
-            <TypingText title="December • 30 • 2022" />
-            <motion.div
-              variants={navVariants}
-              initial="hidden"
-              whileInView="show"
-            >
-              <span className="text-[8rem] font-pacifico z-20 leading-[117%] text-center text-[#100D0D]/80  capitalize">
-                happy birthday eggy
-              </span>
-            </motion.div>
-
-            <motion.div
-              variants={planetVariants("left")}
-              className="absolute top-[50%] right-[10%]"
-            >
-              <img
-                src="/cartoon-egg.png"
-                className="w-[250px] h-[250px] opacity-90 "
-              />
-            </motion.div>
-          </div>
-        </motion.div>
+      <div className="h-fit w-full pb-[30%]">
+        <img src="/home_bg.jpg" className="absolute" />
+        <Home></Home>
       </div>
       <div className="h-full w-full pt-[5%] p-0 text-[3rem] font-bold ">
         <img src="/section_2_bg.png" className="absolute" />
         <LetterSection></LetterSection>
 
-        <div className="mt-[5%] w-full flex flex-col items-center h-full">
-          <div class="logo is-animetion text-[#e7e0d0]">
+        <div className="mt-[10%] w-full flex flex-col items-center gap-10 h-full">
+          <div class="logo is-animetion text-[#e7e0d0] text-[14px] sm:text-[20px] md:text-[30px] lg:text-[40px] xl:text-[44px]">
             <span>E</span>
             <span>G</span>
             <span>G</span>
@@ -71,7 +42,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="h-full mt-[25%] pb-[20px] w-full ">
+      <div className="h-full md:mt-[3%] lg:mt-[0%] xl:mt-[13%] 2xl:mt-[23%] pb-[20px] w-full ">
         <img src="/section_3_bg.png" className="absolute" />
         <motion.div
           variants={staggerContainer}

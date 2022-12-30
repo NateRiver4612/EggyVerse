@@ -66,44 +66,51 @@ const Flashcards = () => {
     return squares.map((color, i) => (
       <motion.div
         key={i}
-        className={`square square--${color}`}
+        className={`square  relative m-[15px] rounded-[10px] shadow-lg transition-all duration-700 cursor-pointer`}
         onClick={() => setSelectedSquare(color)}
         variants={squareVariants}
         transition={{ duration: 0.2, type: "spring" }}
       >
-        <img src={eggyForms[color].box} className="rounded-lg"></img>
+        <img
+          src={eggyForms[color].box}
+          className="object-contain rounded-md"
+        ></img>
       </motion.div>
     ));
   };
   return (
     <div
-      className={`cp-transition cp-transition__container cp-transition__container--${selectedSquare}`}
+      className={`cp-transition cp-transition__container  cp-transition__container--${selectedSquare}  
+          h-[20%] sm:h-[35%] md:h-[45%] xl:h-[60%] 2xl:h-[65%]  w-[80%] relative  rounded-[18px] bg-none
+      `}
     >
-      <AnimatePresence exitBeforeEnter initial={false}>
+      <AnimatePresence initial={false}>
         {selectedSquare ? (
           <motion.div
-            className={`card card__wrapper card__wrapper--${selectedSquare}`}
+            className={`card card__wrapper flex justify-center card__wrapper--${selectedSquare}
+              absolute top-0 left-0  h-full p-[10px] sm:p-[30px] rounded-[10px]  flex justify-center grid gap-[10px] sm:gap-[20px]
+            `}
             key="card"
             variants={wrapperVariants}
             initial="initial"
             animate="animate"
             exit="exit"
           >
-            <div className="card__header">
+            <div className="card__header text-[14px] sm:text-[25px] md:text-[30px] lg:text-[35px] xl:text-[40px] 2xl:text-[45px] flex justify-between items-center text-white font-sevillana h-fit underline">
               <span>{eggyForms[selectedSquare].title}</span>
               <button onClick={() => setSelectedSquare(null)}>
-                <CgCloseO size={35} color="white" />
+                <CgCloseO color="white" />
               </button>
             </div>
-            <div className="card__content">
-              <div className="card__text-placeholder font-sevillana">
+            <div className="card__content h-fit">
+              <div className="card__text-placeholder font-sevillana text-[10px] sm:text-[15px] md:text-[20px] lg:text-[25px] xl:text-[30px] 2xl:text-[35px] tracking-wide">
                 {eggyForms[selectedSquare].description}
               </div>
             </div>
           </motion.div>
         ) : (
           <motion.div
-            className="cp-transition__squares-wrapper"
+            className="cp-transition__squares-wrapper flex justify-center items-start"
             key="squares"
             variants={wrapperVariants}
             initial="initial"
