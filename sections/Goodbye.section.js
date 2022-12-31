@@ -9,17 +9,17 @@ const Goodbye = () => {
       whileInView="show"
       viewport={{ once: false }}
       variants={staggerContainer}
-      className="flex h-full justify-center"
+      className="flex h-full justify-center relative"
     >
-      <div className="flex mt">
+      <div className="flex ">
         <motion.div
           variants={fadeIn("right", "spring", 0.1, 1)}
-          className="relative flex-1 mt-[20%] flex  items-center"
+          className="relative flex-[0.5]  flex  items-center"
         >
-          <img src="/demo3.png" alt="planet-09" height={1400} width={1200} />
+          <img src="/demo3.png" alt="planet-09" className="w-[94%]" />
           <motion.div
             variants={navVariants}
-            className="flex flex-col font-bold text-[3rem] font-playfair"
+            className="flex flex-col font-bold md:text-[2rem] xl:text-[3rem] font-playfair"
           >
             <span>T</span>
             <span>O</span>
@@ -33,9 +33,9 @@ const Goodbye = () => {
         </motion.div>
         <motion.div
           variants={fadeIn("left", "spring", 0.1, 1)}
-          className="relative flex-1 mt-[20%] p-0 flex  items-center"
+          className="relative flex-[0.5] w-[80%] p-0 flex h-fit  items-center"
         >
-          <img src="/demo4.png" alt="planet-09" height={1400} width={1200} />
+          <img src="/demo4.png" alt="planet-09" className=" w-[94%]" />
         </motion.div>
       </div>
     </motion.div>
