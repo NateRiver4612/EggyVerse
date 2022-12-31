@@ -11,7 +11,7 @@ const VideoCard = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="w-full h-full flex flex-col items-center absolute mt-[10%] 2xl:mt-[20%]"
+      className="w-full h-full flex flex-col items-center absolute mt-[5%] 2xl:mt-[20%]"
     >
       <div className="">
         <motion.span

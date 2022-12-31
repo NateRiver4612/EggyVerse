@@ -32,12 +32,12 @@ export default function Page() {
         </div>
       </div>
 
-      <div className=" h-[30%] sm:h-[55%] md:h-[65%] lg:h-[80%] xl:h-full md:mt-[3%] lg:mt-[0%] relative xl:mt-[13%] 2xl:mt-[23%] pb-[20px] w-full ">
+      <div className="flex justify-center items-center h-[28%] sm:h-[55%] md:h-[65%] lg:h-[80%] xl:h-full md:mt-[3%] lg:mt-[0%] relative xl:mt-[13%] 2xl:mt-[23%] pb-[20px] w-full ">
         <img src="/section_3_bg.png" className="absolute" />
         <VideoCard></VideoCard>
       </div>
       <div className="h-fit w-full xl:mt-[13%] 2xl:mt-[20%] pb-[20px]">
-        <img src="/section_4_bg.png" className="absolute" />
+        <img src="/section_4_bg.png" className="absolute " />
         <Goodbye></Goodbye>
       </div>
     </div>
