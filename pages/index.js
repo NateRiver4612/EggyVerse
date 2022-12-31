@@ -11,7 +11,7 @@ export default function Page() {
         <img src="/home_bg.jpg" className="absolute object-cover" />
         <Home></Home>
       </div>
-      <div className="h-[35%] sm:h-[65%] md:h-[80%] lg:h-[95%] xl:h-full w-full pt-[5%] p-0 text-[3rem] font-bold ">
+      <div className="h-[40%] sm:h-[65%] md:h-[80%] lg:h-[95%] xl:h-full w-full pt-[5%] p-0 text-[3rem] font-bold ">
         <img src="/section_2_bg.png" className="absolute" />
         <LetterSection></LetterSection>
 
