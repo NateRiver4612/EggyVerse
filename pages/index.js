@@ -32,7 +32,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="h-full md:mt-[3%] lg:mt-[0%] xl:mt-[13%] 2xl:mt-[23%] pb-[20px] w-full ">
+      <div className="h-[30%] sm:h-[65%] md:h-[80%] lg:h-[80%] xl:h-[90%] 2xl:h-full md:mt-[3%] lg:mt-[0%] relative xl:mt-[13%] 2xl:mt-[23%] pb-[20px] w-full ">
         <img src="/section_3_bg.png" className="absolute" />
         <VideoCard></VideoCard>
       </div>
