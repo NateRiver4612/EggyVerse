@@ -6,16 +6,16 @@ import Goodbye from "../sections/Goodbye.section";
 
 export default function Page() {
   return (
-    <div className="h-[100vh] relative bg-[#f9f6ed] w-screen overflow-hidden">
+    <div className="h-[100vh] relative bg-[#f9f7ec] w-screen bg-gray-500 overflow-x-hidden">
       <div className="h-fit w-full pb-[30%] relative">
         <img src="/home_bg.jpg" className="absolute object-cover" />
         <Home></Home>
       </div>
-      <div className="h-full  w-full pt-[5%] p-0 text-[3rem] font-bold ">
+      <div className="h-[35%] sm:h-[65%] md:h-[80%] lg:h-full w-full pt-[5%] p-0 text-[3rem] font-bold ">
         <img src="/section_2_bg.png" className="absolute" />
         <LetterSection></LetterSection>
 
-        <div className="mt-[10%] w-full flex flex-col items-center h-full">
+        <div className="mt-[5%] w-full flex flex-col items-center h-full">
           <div class="logo is-animetion text-[#e7e0d0] text-[14px] sm:text-[20px] md:text-[30px] lg:text-[40px] xl:text-[44px]">
             <span>E</span>
             <span>G</span>

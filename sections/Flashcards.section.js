@@ -88,7 +88,7 @@ const Flashcards = () => {
         {selectedSquare ? (
           <motion.div
             className={`card card__wrapper flex justify-center card__wrapper--${selectedSquare}
-              absolute top-0 left-0  p-[15px] sm:p-[30px] rounded-[10px]  flex justify-center grid gap-[10px] sm:gap-[20px]
+              absolute top-0 z-30 left-0  p-[15px] sm:p-[30px] rounded-[10px]  flex justify-center grid gap-[10px] sm:gap-[20px]
             `}
             key="card"
             variants={wrapperVariants}
