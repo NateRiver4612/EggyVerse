@@ -11,7 +11,7 @@ const Goodbye = () => {
       variants={staggerContainer}
       className="flex h-full justify-center relative"
     >
-      <div className="flex ">
+      <div className="flex">
         <motion.div
           variants={fadeIn("right", "spring", 0.1, 1)}
           className="relative flex-[0.5]  flex  items-center"
@@ -33,7 +33,7 @@ const Goodbye = () => {
         </motion.div>
         <motion.div
           variants={fadeIn("left", "spring", 0.1, 1)}
-          className="relative flex-[0.5] w-[80%] p-0 flex h-fit  items-center"
+          className="relative flex-[0.5]  p-0 flex   items-center"
         >
           <img src="/demo4.png" alt="planet-09" className=" w-[94%]" />
         </motion.div>
