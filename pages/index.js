@@ -7,7 +7,7 @@ import Goodbye from "../sections/Goodbye.section";
 export default function Page() {
   return (
     <div className="h-[100vh] relative bg-[#f9f7ec] w-screen bg-gray-500 overflow-x-hidden">
-      <div className="h-fit w-full pb-[30%] relative">
+      <div className="h-fit w-full pb-[20%] sm:pb-[30%] relative">
         <img src="/home_bg.jpg" className="absolute object-cover" />
         <Home></Home>
       </div>
