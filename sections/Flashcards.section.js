@@ -80,15 +80,15 @@ const Flashcards = () => {
   };
   return (
     <div
-      className={`cp-transition cp-transition__container  cp-transition__container--${selectedSquare}  
-          h-[21%] sm:h-[35%] md:h-[45%] xl:h-[60%] 2xl:h-[65%]  w-[80%] relative  rounded-[18px] bg-none
+      className={`cp-transition cp-transition__container   
+          h-fit w-[80%] relative  rounded-[18px] bg-none
       `}
     >
       <AnimatePresence initial={false}>
         {selectedSquare ? (
           <motion.div
             className={`card card__wrapper flex justify-center card__wrapper--${selectedSquare}
-              absolute top-0 left-0  h-full p-[15px] sm:p-[30px] rounded-[10px]  flex justify-center grid gap-[10px] sm:gap-[20px]
+              absolute top-0 left-0  p-[15px] sm:p-[30px] rounded-[10px]  flex justify-center grid gap-[10px] sm:gap-[20px]
             `}
             key="card"
             variants={wrapperVariants}
@@ -96,13 +96,13 @@ const Flashcards = () => {
             animate="animate"
             exit="exit"
           >
-            <div className="card__header text-[14px] sm:text-[25px] md:text-[30px] lg:text-[35px] xl:text-[40px] 2xl:text-[45px] flex justify-between items-center text-white font-sevillana h-fit underline">
+            <div className="card__header text-[14px] sm:text-[25px] md:text-[30px] lg:text-[35px] xl:text-[40px] 2xl:text-[45px] flex justify-between items-center text-white font-sevillana underline">
               <span>{eggyForms[selectedSquare].title}</span>
               <button onClick={() => setSelectedSquare(null)}>
                 <CgCloseO color="white" />
               </button>
             </div>
-            <div className="card__content h-fit">
+            <div className="card__content">
               <div className="card__text-placeholder font-sevillana text-[10px] sm:text-[15px] md:text-[20px] lg:text-[25px] xl:text-[30px] 2xl:text-[35px] tracking-wide">
                 {eggyForms[selectedSquare].description}
               </div>
