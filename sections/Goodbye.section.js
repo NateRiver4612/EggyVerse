@@ -13,7 +13,7 @@ const Goodbye = () => {
     >
       <div className="flex mt">
         <motion.div
-          variants={fadeIn("right", "spring", 2, 2)}
+          variants={fadeIn("right", "spring", 0.1, 1)}
           className="relative flex-1 mt-[20%] flex  items-center"
         >
           <img src="/demo3.png" alt="planet-09" height={1400} width={1200} />
@@ -32,7 +32,7 @@ const Goodbye = () => {
           </motion.div>
         </motion.div>
         <motion.div
-          variants={fadeIn("left", "spring", 2, 2)}
+          variants={fadeIn("left", "spring", 0.1, 1)}
           className="relative flex-1 mt-[20%] p-0 flex  items-center"
         >
           <img src="/demo4.png" alt="planet-09" height={1400} width={1200} />

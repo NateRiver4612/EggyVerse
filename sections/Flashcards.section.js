@@ -81,14 +81,14 @@ const Flashcards = () => {
   return (
     <div
       className={`cp-transition cp-transition__container  cp-transition__container--${selectedSquare}  
-          h-[20%] sm:h-[35%] md:h-[45%] xl:h-[60%] 2xl:h-[65%]  w-[80%] relative  rounded-[18px] bg-none
+          h-[21%] sm:h-[35%] md:h-[45%] xl:h-[60%] 2xl:h-[65%]  w-[80%] relative  rounded-[18px] bg-none
       `}
     >
       <AnimatePresence initial={false}>
         {selectedSquare ? (
           <motion.div
             className={`card card__wrapper flex justify-center card__wrapper--${selectedSquare}
-              absolute top-0 left-0  h-full p-[10px] sm:p-[30px] rounded-[10px]  flex justify-center grid gap-[10px] sm:gap-[20px]
+              absolute top-0 left-0  h-full p-[15px] sm:p-[30px] rounded-[10px]  flex justify-center grid gap-[10px] sm:gap-[20px]
             `}
             key="card"
             variants={wrapperVariants}

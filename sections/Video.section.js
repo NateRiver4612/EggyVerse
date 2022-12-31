@@ -11,12 +11,12 @@ const VideoCard = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="w-full h-full flex flex-col items-center  absolute mt-[20%]"
+      className="w-full h-full flex flex-col items-center absolute  mt-[10%] 2xl:mt-[20%]"
     >
       <div className="">
         <motion.span
           variants={textContainer}
-          className="text-center font-light text-[4rem] text-[#b6a785] tracking-wide"
+          className="text-center font-light text-[15px] sm:text-[30px] md:text-[30px] lg:text-[35px] xl:text-[40px] 2xl:text-[4rem] text-[#b6a785] tracking-wide"
         >
           {Array.from("2022 Captured").map((letter, index) => (
             <motion.span variants={textVariant2} key={index}>
@@ -25,7 +25,11 @@ const VideoCard = () => {
           ))}
         </motion.span>
       </div>
-      <video width="900" height="100" controls loop>
+      <video
+        controls
+        loop
+        className="h-[150px] w-[250px] sm:h-[250px] sm:w-[440px] md:h-[300px] md:w-[530px] lg:h-[360px] lg:w-[640px] xl:h-[450px] xl:w-[800px]"
+      >
         <source type="video/mp4" src="./embo_vid.mp4"></source>
       </video>
     </motion.div>
